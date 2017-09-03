@@ -1,11 +1,9 @@
-
-
 #Permission type: Team member management
 function Send-DropBoxInvite ($email) {
     
 $dbtoken = "YourTokenHere"
 
-$uri='https://api.dropboxapi.com/2/team/members/add '
+$uri='https://api.dropboxapi.com/2/team/members/add'
 $headers = @{"Authorization" = "Bearer " + $dbtoken }
 $Body = @{
     "new_members" = @(@{  
